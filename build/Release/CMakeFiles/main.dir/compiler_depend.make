@@ -52,6 +52,8 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/ferdi/Projects/robotics_world/src/main
   /home/ferdi/.conan2/p/b/sdl9248f3e6e743c/p/include/SDL2/SDL_video.h \
   /home/ferdi/.conan2/p/b/sdl9248f3e6e743c/p/include/SDL2/begin_code.h \
   /home/ferdi/.conan2/p/b/sdl9248f3e6e743c/p/include/SDL2/close_code.h \
+  /home/ferdi/.conan2/p/b/sdl_i1b5ac0d70b8cc/p/include/SDL2/SDL_image.h \
+  /home/ferdi/.conan2/p/b/sdl_t3dd7c8474e962/p/include/SDL2/SDL_ttf.h \
   /usr/include/alloca.h \
   /usr/include/c++/13/bit \
   /usr/include/c++/13/bits/concept_check.h \
@@ -326,9 +328,7 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/ferdi/Projects/robotics_world/src/main
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/prfchwintrin.h:
 
-/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
-
-/usr/include/x86_64-linux-gnu/bits/math-vector.h:
+/usr/lib/gcc/x86_64-linux-gnu/13/include/popcntintrin.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/pmmintrin.h:
 
@@ -400,11 +400,11 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/ferdi/Projects/robotics_world/src/main
 
 /usr/include/c++/13/compare:
 
+/usr/include/c++/13/bits/functexcept.h:
+
 /home/ferdi/.conan2/p/b/sdl9248f3e6e743c/p/include/SDL2/SDL_main.h:
 
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
-
-/usr/include/c++/13/bits/functexcept.h:
 
 /usr/include/c++/13/bits/stl_construct.h:
 
@@ -433,6 +433,8 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/ferdi/Projects/robotics_world/src/main
 /home/ferdi/.conan2/p/b/sdl9248f3e6e743c/p/include/SDL2/SDL_log.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/clzerointrin.h:
+
+/usr/include/c++/13/bits/iterator_concepts.h:
 
 /home/ferdi/.conan2/p/b/sdl9248f3e6e743c/p/include/SDL2/SDL_misc.h:
 
@@ -465,10 +467,6 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/ferdi/Projects/robotics_world/src/main
 /home/ferdi/.conan2/p/b/sdl9248f3e6e743c/p/include/SDL2/SDL_thread.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
-
-/usr/include/c++/13/bits/iterator_concepts.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/popcntintrin.h:
 
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
 
@@ -505,8 +503,6 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/ferdi/Projects/robotics_world/src/main
 /usr/lib/gcc/x86_64-linux-gnu/13/include/raointintrin.h:
 
 /home/ferdi/.conan2/p/b/sdl9248f3e6e743c/p/include/SDL2/SDL_timer.h:
-
-/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
 
 /home/ferdi/.conan2/p/b/sdl9248f3e6e743c/p/include/SDL2/SDL_gesture.h:
 
@@ -634,6 +630,16 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/ferdi/Projects/robotics_world/src/main
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
 
+/home/ferdi/.conan2/p/b/sdl_i1b5ac0d70b8cc/p/include/SDL2/SDL_image.h:
+
+/usr/include/x86_64-linux-gnu/bits/fp-fast.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/pconfigintrin.h:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
+
+/home/ferdi/.conan2/p/b/sdl_t3dd7c8474e962/p/include/SDL2/SDL_ttf.h:
+
 /usr/include/alloca.h:
 
 /usr/include/c++/13/bits/stl_pair.h:
@@ -647,6 +653,10 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/ferdi/Projects/robotics_world/src/main
 /usr/include/c++/13/bits/exception.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
+
+/usr/include/x86_64-linux-gnu/bits/math-vector.h:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
 
 /usr/include/c++/13/bits/utility.h:
 
@@ -853,7 +863,3 @@ CMakeFiles/main.dir/src/main.cpp.o: /home/ferdi/Projects/robotics_world/src/main
 /usr/include/c++/13/tr1/exp_integral.tcc:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/mwaitxintrin.h:
-
-/usr/include/x86_64-linux-gnu/bits/fp-fast.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/pconfigintrin.h:
