@@ -1,4 +1,0 @@
-/home/ferdi/Projects/robotics_world/build/Release/CMakeFiles/screen.dir
-/home/ferdi/Projects/robotics_world/build/Release/CMakeFiles/main.dir
-/home/ferdi/Projects/robotics_world/build/Release/CMakeFiles/edit_cache.dir
-/home/ferdi/Projects/robotics_world/build/Release/CMakeFiles/rebuild_cache.dir
