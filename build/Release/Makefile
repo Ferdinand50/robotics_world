@@ -117,6 +117,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named screen
+
+# Build rule for target.
+screen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 screen
+.PHONY : screen
+
+# fast build rule for target.
+screen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/screen.dir/build.make CMakeFiles/screen.dir/build
+.PHONY : screen/fast
+
+#=============================================================================
 # Target rules for targets named main
 
 # Build rule for target.
@@ -153,6 +166,33 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/screen.o: src/screen.cpp.o
+.PHONY : src/screen.o
+
+# target to build an object file
+src/screen.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/screen.dir/build.make CMakeFiles/screen.dir/src/screen.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/screen.cpp.o
+.PHONY : src/screen.cpp.o
+
+src/screen.i: src/screen.cpp.i
+.PHONY : src/screen.i
+
+# target to preprocess a source file
+src/screen.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/screen.dir/build.make CMakeFiles/screen.dir/src/screen.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/screen.cpp.i
+.PHONY : src/screen.cpp.i
+
+src/screen.s: src/screen.cpp.s
+.PHONY : src/screen.s
+
+# target to generate assembly for a file
+src/screen.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/screen.dir/build.make CMakeFiles/screen.dir/src/screen.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/screen.cpp.s
+.PHONY : src/screen.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,9 +202,13 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... main"
+	@echo "... screen"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/screen.o"
+	@echo "... src/screen.i"
+	@echo "... src/screen.s"
 .PHONY : help
 
 

@@ -1,6 +1,8 @@
 CMakeFiles/main.dir/src/main.cpp.o: \
  /home/ferdi/Projects/robotics_world/src/main.cpp \
- /usr/include/stdc-predef.h /usr/include/stdio.h \
+ /usr/include/stdc-predef.h \
+ /home/ferdi/Projects/robotics_world/include/screen.h \
+ /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -266,10 +268,4 @@ CMakeFiles/main.dir/src/main.cpp.o: \
  /home/ferdi/.conan2/p/b/sdl9248f3e6e743c/p/include/SDL2/SDL_version.h \
  /home/ferdi/.conan2/p/b/sdl9248f3e6e743c/p/include/SDL2/SDL_locale.h \
  /home/ferdi/.conan2/p/b/sdl9248f3e6e743c/p/include/SDL2/SDL_misc.h \
- /home/ferdi/.conan2/p/b/sdl9248f3e6e743c/p/include/SDL2/SDL_timer.h \
- /home/ferdi/.conan2/p/b/sdl_i1b5ac0d70b8cc/p/include/SDL2/SDL_image.h \
- /home/ferdi/.conan2/p/b/sdl9248f3e6e743c/p/include/SDL2/SDL.h \
- /home/ferdi/.conan2/p/b/sdl9248f3e6e743c/p/include/SDL2/SDL_version.h \
- /home/ferdi/.conan2/p/b/sdl9248f3e6e743c/p/include/SDL2/begin_code.h \
- /home/ferdi/.conan2/p/b/sdl9248f3e6e743c/p/include/SDL2/close_code.h \
- /home/ferdi/.conan2/p/b/sdl_t3dd7c8474e962/p/include/SDL2/SDL_ttf.h
+ /home/ferdi/.conan2/p/b/sdl9248f3e6e743c/p/include/SDL2/SDL_timer.h

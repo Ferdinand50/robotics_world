@@ -63,6 +63,7 @@ CMAKE_BINARY_DIR = /home/ferdi/Projects/robotics_world/build/Release
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/screen.dir/all
 all: CMakeFiles/main.dir/all
 .PHONY : all
 
@@ -71,22 +72,49 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/screen.dir/clean
 clean: CMakeFiles/main.dir/clean
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/screen.dir
+
+# All Build rule for target.
+CMakeFiles/screen.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/screen.dir/build.make CMakeFiles/screen.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/screen.dir/build.make CMakeFiles/screen.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ferdi/Projects/robotics_world/build/Release/CMakeFiles --progress-num=4,5 "Built target screen"
+.PHONY : CMakeFiles/screen.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/screen.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ferdi/Projects/robotics_world/build/Release/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/screen.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ferdi/Projects/robotics_world/build/Release/CMakeFiles 0
+.PHONY : CMakeFiles/screen.dir/rule
+
+# Convenience name for target.
+screen: CMakeFiles/screen.dir/rule
+.PHONY : screen
+
+# clean rule for target.
+CMakeFiles/screen.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/screen.dir/build.make CMakeFiles/screen.dir/clean
+.PHONY : CMakeFiles/screen.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/main.dir
 
 # All Build rule for target.
-CMakeFiles/main.dir/all:
+CMakeFiles/main.dir/all: CMakeFiles/screen.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ferdi/Projects/robotics_world/build/Release/CMakeFiles --progress-num=1,2 "Built target main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ferdi/Projects/robotics_world/build/Release/CMakeFiles --progress-num=1,2,3 "Built target main"
 .PHONY : CMakeFiles/main.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ferdi/Projects/robotics_world/build/Release/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ferdi/Projects/robotics_world/build/Release/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/main.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ferdi/Projects/robotics_world/build/Release/CMakeFiles 0
 .PHONY : CMakeFiles/main.dir/rule
