@@ -7,16 +7,20 @@
 
 class Screen {
 public:
-    Screen(int _width, int _height);
+    Screen(int _SCREEN_WIDTH, int _SCREEN_HEIGHT);
     ~Screen();
     void display();
     void quit();
 
 private:
-    int _width;
-    int _height;
-    SDL_Window* _win;
-    SDL_Renderer* _rend;
+    bool loadMedia();
+
+private:
+    const int _SCREEN_WIDTH;
+    const int _SCREEN_HEIGHT;
+    SDL_Window* _window;
+    SDL_Renderer* _renderer;
+    SDL_Surface* _surface;
 };
 
 #endif // SCREEN_H
