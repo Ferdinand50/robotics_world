@@ -13,7 +13,10 @@ public:
     void quit();
 
 private:
-    bool loadMedia();
+    bool load_media();
+    void handle_input();
+    void prepare_scene();
+    void present_scene();
 
 private:
     const int _SCREEN_WIDTH;

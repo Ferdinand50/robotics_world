@@ -16,6 +16,11 @@ Screen::Screen(int _SCREEN_WIDTH, int _SCREEN_HEIGHT) : _SCREEN_WIDTH(_SCREEN_WI
         printf( "Window could not be created! SDL_Error: %s\n", SDL_GetError() );
         exit(1);
     }
+
+    SDL_SetHint(SDL_HINT_RENDER_SCALE_QUALITY, "linear");
+
+    //TODO: continue here
+
     //Get window surface
     _surface = SDL_GetWindowSurface(_window);
 
@@ -31,7 +36,6 @@ Screen::Screen(int _SCREEN_WIDTH, int _SCREEN_HEIGHT) : _SCREEN_WIDTH(_SCREEN_WI
     
     // creates a renderer to render our images
     _renderer = SDL_CreateRenderer(_window, -1, render_flags);
-
 }
 
 Screen::~Screen() {
@@ -47,7 +51,7 @@ void Screen::display() {
     std::cout << "Displaying screen of size " << _SCREEN_WIDTH << "x" << _SCREEN_HEIGHT << std::endl;
 }
 
-bool Screen::loadMedia()
+bool Screen::load_media()
 {
     //Loading success flag
     bool success = true;
@@ -63,6 +67,34 @@ bool Screen::loadMedia()
     return success;
 }
 
+void Screen::handle_input() {
+    SDL_Event event;
+
+    while (SDL_PollEvent(&event))
+    {
+        switch (event.type)
+        {
+            case SDL_QUIT:
+                exit(0);
+                break;
+            default:
+                break;
+        }
+    }
+}
+
+void Screen::prepare_scene()
+{
+    SDL_SetRenderDrawColor(_renderer, 96, 128, 255, 255);
+    SDL_RenderClear(_renderer);
+}
+
+void Screen::present_scene()
+{
+    SDL_RenderPresent(_renderer);
+}
+
+// TODO: destructor and quit function are similar
 void Screen::quit() {
     SDL_DestroyWindow(_window);
     SDL_Quit();
